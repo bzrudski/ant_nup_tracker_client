@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by Benjamin Rudski on 2021-12-24.
+  
+*/
+
+NSLocationWhenInUseUsageDescription = "Utiliser les services de localisation pour enregistrer des vols nuptials et pour réorganiser la liste de vols par distance.";
+
+NSCameraUsageDescription = "Utiliser la caméra pour prendre des photos de vols nuptials de fourmis.";
+
+NSPhotoLibraryUsageDescription = "Insérer des photos de vols nuptials de votre galerie de photos.";

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="splash_bg" type="color"><gradient android:startColor="#45afff" android:endColor="#c9e8ff" android:angle="-90"/></item>
+</resources>

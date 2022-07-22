@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by Benjamin Rudski on 2021-12-24.
+  
+*/
+
+NSLocationWhenInUseUsageDescription = "Use location features to get current location for reporting flights and filtering flights based on proximity.";
+
+NSCameraUsageDescription = "Use camera to take pictures of ant nuptial flights.";
+
+NSPhotoLibraryUsageDescription = "Upload existing pictures of ant nuptial flights from your photo library.";
+
+NSAppleMusicUsageDescription = "Upload existing pictures of ant nuptial flights from your photo library.";

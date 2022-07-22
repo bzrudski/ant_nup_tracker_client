@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   inkscape:export-ydpi="3.870476"
+   inkscape:export-xdpi="3.870476"
+   inkscape:export-filename="/Users/benjamin/Documents/Lab/nuptialtrack-server/nuptialtracker/static/nuptiallog/icons/favicon.png"
+   sodipodi:docname="background_release.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 210"
+   height="210mm"
+   width="210mm"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       x="-0.25"
+       width="1.5"
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Convert pictures to thick jelly"
+       inkscape:menu="Bumps"
+       inkscape:label="Jelly Bump"
+       id="filter447">
+      <feFlood
+         flood-color="rgb(193,255,255)"
+         flood-opacity="0.5"
+         result="result13"
+         id="feFlood423" />
+      <feTurbulence
+         baseFrequency="0.015"
+         numOctaves="2"
+         type="fractalNoise"
+         result="result7"
+         seed="0"
+         id="feTurbulence425" />
+      <feComposite
+         k4="0"
+         in="result7"
+         operator="arithmetic"
+         result="result6"
+         in2="SourceGraphic"
+         k2="0.5"
+         k3="1"
+         id="feComposite427" />
+      <feGaussianBlur
+         stdDeviation="1.5"
+         result="result11"
+         in="result6"
+         id="feGaussianBlur429" />
+      <feDisplacementMap
+         result="result4"
+         scale="62"
+         yChannelSelector="G"
+         xChannelSelector="A"
+         in="result7"
+         in2="result11"
+         id="feDisplacementMap431" />
+      <feComposite
+         in="SourceGraphic"
+         operator="in"
+         result="result2"
+         in2="result4"
+         id="feComposite433" />
+      <feSpecularLighting
+         lighting-color="#f5e6c3"
+         result="result12"
+         surfaceScale="15"
+         specularExponent="5"
+         id="feSpecularLighting437">
+        <feDistantLight
+           azimuth="225"
+           elevation="35"
+           id="feDistantLight435" />
+      </feSpecularLighting>
+      <feMerge
+         result="result14"
+         id="feMerge443">
+        <feMergeNode
+           in="result13"
+           id="feMergeNode439" />
+        <feMergeNode
+           in="result12"
+           id="feMergeNode441" />
+      </feMerge>
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result14"
+         id="feComposite445" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1010"
+       x1="104.363"
+       y1="206.89664"
+       x2="102.36318"
+       y2="-1.9367402"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.09945679)">
+      <stop
+         style="stop-color:#c9e8ff;stop-opacity:1"
+         offset="0"
+         id="stop21" />
+      <stop
+         style="stop-color:#45afff;stop-opacity:1"
+         offset="1"
+         id="stop23" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2345"
+       x1="109.82056"
+       y1="163.32027"
+       x2="109.29851"
+       y2="259.26764"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:#ca753d;stop-opacity:1"
+         offset="0"
+         id="stop26" />
+      <stop
+         style="stop-color:#563018;stop-opacity:1"
+         offset="1"
+         id="stop28" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="236"
+     inkscape:window-height="807"
+     inkscape:window-width="1204"
+     inkscape:snap-others="true"
+     inkscape:object-nodes="false"
+     inkscape:snap-page="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-object-midpoints="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="602.27914"
+     inkscape:cx="309.35926"
+     inkscape:zoom="0.33456247"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="false"
+     borderlayer="true"
+     inkscape:pagecheckerboard="0"
+     inkscape:object-paths="true"
+     inkscape:bbox-paths="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       y="-107.55524"
+       x="-104.99998"
+       height="314.45187"
+       width="419.99997"
+       id="rect16"
+       style="fill:url(#linearGradient1010);fill-opacity:1;stroke:none;stroke-width:3.46109;stroke-linecap:round" />
+    <ellipse
+       id="path18"
+       style="fill:url(#linearGradient2345);stroke:none;stroke-width:2;stroke-linecap:round;fill-opacity:1"
+       ry="72.775734"
+       rx="208.40323"
+       cy="236.08109"
+       cx="114.04071" />
+  </g>
+</svg>

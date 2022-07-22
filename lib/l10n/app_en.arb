@@ -1,0 +1,1251 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "A greeting from beyond!"
+  },
+  "lowConfidence": "Low",
+  "@lowConfidence": {
+    "description": "Used to indicate low confidence."
+  },
+  "highConfidence": "High",
+  "@highConfidence": {
+    "description": "Used to indicate high confidence."
+  },
+  "singleQueen": "Single queen",
+  "@singleQueen": {
+    "description": "Used to indicate flight with single queen."
+  },
+  "manyQueens": "Many queens",
+  "@manyQueens": {
+    "description": "Used to indicate flight with many queens."
+  },
+  "flightDetailHeader": "Flight {value}",
+  "@flightDetailHeader": {
+    "description": "Header for the detail screen.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "basicInfo": "Basic Information",
+  "@basicInfo": {
+    "description": "Indicates the section for the basic information about the flight."
+  },
+  "flightID": "Flight ID",
+  "@flightID": {
+    "description": "Unique identifier for a flight."
+  },
+  "genus": "Genus",
+  "@genus": {
+    "description": "Genus from taxonomy."
+  },
+  "species": "Species",
+  "@species": {
+    "description": "Species name from taxonomy."
+  },
+  "speciesConfidence": "Species Confidence",
+  "@speciesConfidence": {
+    "description": "Label for confidence level for species identification."
+  },
+  "flightSize": "Size",
+  "@flightSize": {
+    "description": "Label for size of flight."
+  },
+  "dateAndTimeOfFlight": "Date and Time of Flight",
+  "@dateAndTimeOfFlight": {
+    "description": "Header for flight detail section describing date and time of flight."
+  },
+  "dateOfFlight": "Date of Flight",
+  "@dateOfFlight": {
+    "description": "Label for date of flight."
+  },
+  "timeOfFlight": "Time of Flight",
+  "@timeOfFlight": {
+    "description": "Label for time of flight."
+  },
+  "flightLocationHeader": "Flight Location",
+  "@flightLocationHeader": {
+    "description": "Header for detail section describing flight location."
+  },
+  "gpsCoordinatesLabel": "GPS Coordinates",
+  "@gpsCoordinatesLabel": {
+    "description": "Label in flight detail for the GPS coordinates."
+  },
+  "radiusDetailLabel": "Within (\u00b1)",
+  "@radiusDetailLabel": {
+    "description": "Label in flight detail for the radius around the flight location."
+  },
+  "radiusDistanceDetail": "{value} km",
+  "@radiusDistanceDetail": {
+    "description": "Radius from the location **in km**. This string is meant to be used to localise the symbol for km, such as ק\"מ in Hebrew",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "recordingInformationHeader": "Recording Information",
+  "@recordingInformationHeader": {
+    "description": "Header for the recording information section of the flight detail."
+  },
+  "recordedByLabel": "Recorded By",
+  "@recordedByLabel": {
+    "description": "Flight detail label for the user who recorded the flight."
+  },
+  "dateRecordedDetailLabel": "Date Recorded",
+  "@dateRecordedDetailLabel": {
+    "description": "Label for date recorded in the flight detail."
+  },
+  "timeRecordedDetailLabel": "Time Recorded (UTC)",
+  "@timeRecordedDetailLabel": {
+    "description": "Label for time recorded in the flight detail."
+  },
+  "imagesHeader": "Flight Images",
+  "@imagesHeader": {
+    "description": "Header for the images section in the flight detail and form."
+  },
+  "commentsHeader": "Comments",
+  "@commentsHeader": {
+    "description": "Header for the comments section of the flight detail screen."
+  },
+  "noCommentsMessage": "No Comments",
+  "@noCommentsMessage": {
+    "description": "Message to show when no comments are present."
+  },
+  "recordHistoryHeader": "Record History",
+  "@recordHistoryHeader": {
+    "description": "Header for the record history section of the flight detail screen."
+  },
+  "recordHistoryLabel": "Record History",
+  "@recordHistoryLabel": {
+    "description": "Label for the record history button of the flight detail screen."
+  },
+  "weatherHeader": "Weather",
+  "@weatherHeader": {
+    "description": "Header for the weather section of the flight detail screen."
+  },
+  "weatherLabel": "Weather from OpenWeather Map",
+  "@weatherLabel": {
+    "description": "Label for the weather button of the flight detail screen."
+  },
+  "verificationInformationHeader": "Verification Information",
+  "@verificationInformationHeader": {
+    "description": "Header for the verification information section of the flight detail."
+  },
+  "verifiedByLabel": "Verified By",
+  "@verifiedByLabel": {
+    "description": "Flight detail label for the user who verified the flight."
+  },
+  "dateVerifiedDetailLabel": "Date Verified",
+  "@dateVerifiedDetailLabel": {
+    "description": "Label for date verified in the flight detail."
+  },
+  "timeVerifiedDetailLabel": "Time Verified",
+  "@timeVerifiedDetailLabel": {
+    "description": "Label for time verified in the flight detail."
+  },
+  "imageHeaderDetail": "Flight Images",
+  "@imageHeaderDetail": {
+    "description": "Header for the images in the flight detail."
+  },
+  "userDetailsAppBarHeader": "Details for {user}",
+  "@userDetailsAppBarHeader": {
+    "description": "Title for the app bar for the user detail page.",
+    "placeholders": {
+      "user": {
+        "type": "String",
+        "example": "dentata408"
+      }
+    }
+  },
+  "usernameLabel": "Username",
+  "@usernameLabel": {
+    "description": "Label in the user detail screen for username."
+  },
+  "userRoleLabel": "User Role",
+  "@userRoleLabel": {
+    "description": "Label in the user detail screen for user role."
+  },
+  "institutionLabel": "Institution",
+  "@institutionLabel": {
+    "description": "Label in the user detail screen for user institution."
+  },
+  "userDescriptionLabel": "Description",
+  "@userDescriptionLabel": {
+    "description": "Label in the user detail screen for user description."
+  },
+  "citizenUser": "Citizen Scientist",
+  "@citizenUser": {
+    "description": "Label in user detail screen for citizen scientist role."
+  },
+  "professionalUser": "Myrmecologist",
+  "@professionalUser": {
+    "description": "Label in user detail screen for professional myrmecologist role."
+  },
+  "flaggedUser": "Flagged",
+  "@flaggedUser": {
+    "description": "Label in user detail screen for flagged user."
+  },
+  "flightHistoryAppBarHeader": "History for Flight {id}",
+  "@flightHistoryAppBarHeader": {
+    "description": "App bar header for the flight record history screen.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "readExceptionBody": "Error reading information from the server (response code {code}).",
+  "@readExceptionBody": {
+    "description": "Message to display on alert when a `ReadException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "readExceptionHeader": "Read Error",
+  "@readExceptionHeader": {
+    "description": "Header to display in alert when `ReadException` is thrown."
+  },
+  "jsonExceptionBody": "Error parsing the response from the server. If the problem persists, please contact us.",
+  "@jsonExceptionBody": {
+    "description": "Message to display on alert when a `JsonException` is caught."
+  },
+  "jsonExceptionHeader": "JSON Error",
+  "@jsonExceptionHeader": {
+    "description": "Header to display on alert when `JsonException` is caught."
+  },
+  "getExceptionBody": "Error getting information from the server (response code {code}).",
+  "@getExceptionBody": {
+    "description": "Message to display on alert when a `GetException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "getExceptionHeader": "Read Error",
+  "@getExceptionHeader": {
+    "description": "Header to display in alert when `GetException` is caught."
+  },
+  "invalidIdExceptionBody": "Invalid flight ID provided. If the problem persists, please contact us.",
+  "@invalidIdExceptionBody": {
+    "description": "Message to display on alert when an `InvalidIdException` is caught."
+  },
+  "invalidIdExceptionHeader": "Invalid ID",
+  "@invalidIdExceptionHeader": {
+    "description": "Header to display on alert when `InvalidIdException` is caught."
+  },
+  "noFlightExceptionBody": "The requested flight ({id}) does not exist. If you believe this is an error, please contact us.",
+  "@noFlightExceptionBody": {
+    "description": "Message to display on alert when a `NoFlightException` is caught.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "noFlightExceptionHeader": "Flight Not Found",
+  "@noFlightExceptionHeader": {
+    "description": "Header to display in alert when `NoFlightException` is caught."
+  },
+  "noImageExceptionBody": "The requested image ({id}) does not exist. If you believe this is an error, please contact us.",
+  "@noImageExceptionBody": {
+    "description": "Message to display on alert when a `NoImageException` is caught.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "noImageExceptionHeader": "Image Not Found",
+  "@noImageExceptionHeader": {
+    "description": "Header to display in alert when `NoImageException` is caught."
+  },
+  "noWeatherExceptionBody": "No weather could be found for flight {id}. If you believe this is an error, please contact us.",
+  "@noWeatherExceptionBody": {
+    "description": "Message to display on alert when a `NoWeatherException` is caught.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "noWeatherExceptionHeader": "Weather Not Found",
+  "@noWeatherExceptionHeader": {
+    "description": "Header to display in alert when `NoWeatherException` is caught."
+  },
+  "invalidImageTypeExceptionBody": "The image you are attempting to upload is not a valid image file (MIME type: {mime}). Please try again with a valid file.",
+  "@invalidImageTypeExceptionBody": {
+    "description": "Message to display on alert when a `InvalidImageTypeException` is caught.",
+    "placeholders": {
+      "mime": {
+        "type": "String",
+        "example": "application\/json"
+      }
+    }
+  },
+  "invalidImageTypeExceptionHeader": "Invalid Image",
+  "@invalidImageTypeExceptionHeader": {
+    "description": "Header to display in alert when `InvalidImageTypeException` is caught."
+  },
+  "noResponseExceptionBody": "No response was returned from the server. Please check your network and try again.",
+  "@noResponseExceptionBody": {
+    "description": "Message to display on alert when a `NoResponseException` is caught."
+  },
+  "noResponseExceptionHeader": "Network Error",
+  "@noResponseExceptionHeader": {
+    "description": "Header to display on alert when `NoResponseException` is caught."
+  },
+  "failedAuthenticationExceptionBody": "Your authentication was rejected by the server. This most likely means that your session has expired. Please log back in before continuing.",
+  "@failedAuthenticationExceptionBody": {
+    "description": "Message to display on alert when a `FailedAuthenticationException` is caught."
+  },
+  "failedAuthenticationExceptionHeader": "Authentication Error",
+  "@failedAuthenticationExceptionHeader": {
+    "description": "Header to display on alert when `FailedAuthenticationException` is caught."
+  },
+  "emptyUsernamePasswordExceptionBody": "Please enter your username and password before continuing.",
+  "@emptyUsernamePasswordExceptionBody": {
+    "description": "Message to display on alert when an `EmptyUsernamePasswordException` is caught."
+  },
+  "emptyUsernamePasswordExceptionHeader": "Empty Username and/or Password",
+  "@emptyUsernamePasswordExceptionHeader": {
+    "description": "Header to display on alert when `EmptyUsernamePasswordException` is caught."
+  },
+  "incorrectCredentialsExceptionBody": "Incorrect username or password entered. If you have forgotten your password, please reset it.",
+  "@incorrectCredentialsExceptionBody": {
+    "description": "Message to display on alert when an `IncorrectCredentialsException` is caught."
+  },
+  "incorrectCredentialsExceptionHeader": "Incorrect Authentication",
+  "@incorrectCredentialsExceptionHeader": {
+    "description": "Header to display on alert when `IncorrectCredentialsException` is caught."
+  },
+  "forbiddenAccessExceptionBody": "Your account is not active. This is probably the result of not activating your account when you created it or your account may be flagged. Please contact us to fix this problem.",
+  "@forbiddenAccessExceptionBody": {
+    "description": "Message to display on alert when a `ForbiddenAccessException` is caught."
+  },
+  "forbiddenAccessExceptionHeader": "Forbidden",
+  "@forbiddenAccessExceptionHeader": {
+    "description": "Header to display on alert when `ForbiddenAccessException` is caught."
+  },
+  "insufficientPrivilegesExceptionBody": "You do not have permission to perform this task. If you believe that this is an error, please contact us.",
+  "@insufficientPrivilegesExceptionBody": {
+    "description": "Message to display on alert when a `InsufficientPrivilegesException` is caught."
+  },
+  "insufficientPrivilegesExceptionHeader": "Permission Error",
+  "@insufficientPrivilegesExceptionHeader": {
+    "description": "Header to display on alert when `InsufficientPrivilegesException` is caught."
+  },
+  "loginExceptionBody": "Error logging in. The server returned code {value}. Please try again. If the problem persists, contact us.",
+  "@loginExceptionBody": {
+    "description": "Message to display on alert when a `LoginException` is caught.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "loginExceptionHeader": "Login Error",
+  "@loginExceptionHeader": {
+    "description": "Header to display on alert when `LoginException` is caught."
+  },
+  "logoutExceptionBody": "Error logging out. The server returned code {value}. Please try again. If the problem persists, contact us.",
+  "@logoutExceptionBody": {
+    "description": "Message to display on alert when a `LogoutException` is caught.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "logoutExceptionHeader": "Logout Error",
+  "@logoutExceptionHeader": {
+    "description": "Header to display on alert when `LogoutException` is caught."
+  },
+  "addFlightExceptionBody": "Error adding new flight. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@addFlightExceptionBody": {
+    "description": "Message to display on alert when a `AddFlightException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "addFlightExceptionHeader": "Error Adding Flight",
+  "@addFlightExceptionHeader": {
+    "description": "Header to display in alert when `AddFlightException` is thrown."
+  },
+  "editFlightExceptionBody": "Error updating the flight. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@editFlightExceptionBody": {
+    "description": "Message to display on alert when a `EditFlightException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "editFlightExceptionHeader": "Error Editing Flight",
+  "@editFlightExceptionHeader": {
+    "description": "Header to display in alert when `EditFlightException` is thrown."
+  },
+  "commentCreationExceptionBody": "Error creating the comment. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@commentCreationExceptionBody": {
+    "description": "Message to display on alert when a `CommentCreationException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "commentCreationExceptionHeader": "Error Creating Comment",
+  "@commentCreationExceptionHeader": {
+    "description": "Header to display in alert when `CommentCreationException` is thrown."
+  },
+  "imageCreationExceptionBody": "Error uploading the image. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@imageCreationExceptionBody": {
+    "description": "Message to display on alert when a `ImageCreationException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "imageCreationExceptionHeader": "Image Upload Error",
+  "@imageCreationExceptionHeader": {
+    "description": "Header to display in alert when `ImageCreationException` is thrown."
+  },
+  "imageDeletionExceptionBody": "Error deleting the image. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@imageDeletionExceptionBody": {
+    "description": "Message to display on alert when a `ImageDeletionException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "imageDeletionExceptionHeader": "Image Deletion Error",
+  "@imageDeletionExceptionHeader": {
+    "description": "Header to display in alert when `ImageDeletionException` is thrown."
+  },
+  "flightVerificationExceptionBody": "Error verifying the flight. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@flightVerificationExceptionBody": {
+    "description": "Message to display on alert when a `FlightVerificationException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "flightVerificationExceptionHeader": "Error Verifying Flight",
+  "@flightVerificationExceptionHeader": {
+    "description": "Header to display in alert when `FlightVerificationException` is thrown."
+  },
+  "notImageRowExceptionBody": "The row you attempted to delete is not an image row. If you believe this is an error, please contact us.",
+  "@notImageRowExceptionBody": {
+    "description": "Message to display on alert when a `NotImageException` is caught."
+  },
+  "notImageRowExceptionHeader": "Illegal Row Operation",
+  "@notImageRowExceptionHeader": {
+    "description": "Header to display on alert when `NotImageException` is caught."
+  },
+  "notificationUpdateExceptionBody": "Error updating notification settings (response code {code}). If the problem persists, please contact us.",
+  "@notificationUpdateExceptionBody": {
+    "description": "Message to display on alert when a `NotificationUpdateException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "notificationUpdateExceptionHeader": "Notification Settings Update Error",
+  "@notificationUpdateExceptionHeader": {
+    "description": "Header to display in alert when `NotificationUpdateException` is thrown."
+  },
+  "tokenVerificationExceptionBody": "Error verifying session (response code {code}). If the problem persists, please contact us.",
+  "@tokenVerificationExceptionBody": {
+    "description": "Message to display on alert when a `TokenVerificationException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "tokenVerificationExceptionHeader": "Login Verification Error",
+  "@tokenVerificationExceptionHeader": {
+    "description": "Header to display in alert when `TokenVerificationException` is thrown."
+  },
+  "genusNotFoundExceptionBody": "The requested genus ({id}) does not exist. If you believe this is an error, please contact us.",
+  "@genusNotFoundExceptionBody": {
+    "description": "Message to display on alert when a `GenusNotFoundException` is caught.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "genusNotFoundExceptionHeader": "Genus Not Found",
+  "@genusNotFoundExceptionHeader": {
+    "description": "Header to display in alert when `GenusNotFoundException` is caught."
+  },
+  "noFlightResultsExceptionBody": "No flights match your filtering parameters. Please adjust your filter settings and try again.",
+  "@noFlightResultsExceptionBody": {
+    "description": "Message to display on alert when a `NoFlightResultsException` is caught."
+  },
+  "noFlightResultsExceptionHeader": "No Flights Found",
+  "@noFlightResultsExceptionHeader": {
+    "description": "Header to display on alert when `NoFlightResultsException` is caught."
+  },
+  "tryAgainButton": "Try Again",
+  "@tryAgainButton": {
+    "description": "Label for 'try again' button on alert dialogs."
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": "Label for 'cancel' button on alert dialogs."
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Label for 'delete' action."
+  },
+  "flightWeatherAppBarHeader": "Weather for Flight {id}",
+  "@flightWeatherAppBarHeader": {
+    "description": "App bar header for the flight weather screen.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "windSpeedLabel": "Wind Speed",
+  "@windSpeedLabel": {
+    "description": "Label in the weather detail screen for the wind speed."
+  },
+  "windSpeedDetail": "{speed} m/s",
+  "@windSpeedDetail": {
+    "description": "Formats the wind speed for the weather detail screen. For translating, only change the representation of the units.",
+    "placeholders": {
+      "speed": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "windDirectionLabel": "Wind Direction",
+  "@windDirectionLabel": {
+    "description": "Label in the weather detail screen for the wind direction."
+  },
+  "windDirectionDetail": "{direction}\u00b0",
+  "@windDirectionDetail": {
+    "description": "Formats the wind direction for the weather detail screen. For translating, only change the representation of the units.",
+    "placeholders": {
+      "direction": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "weatherWindSectionHeader": "Wind Information",
+  "@weatherWindSectionHeader": {
+    "description": "Header for the wind section of the weather detail screen."
+  },
+  "weatherTimeFetchedLabel": "Time Fetched",
+  "@weatherTimeFetchedLabel": {
+    "description": "Label for the time fetched row in the weather detail screen."
+  },
+  "weatherTimeFetchedHeader": "Time Fetched",
+  "@weatherTimeFetchedHeader": {
+    "description": "Header for the time fetched section in the weather detail screen."
+  },
+  "weatherDescriptionLabel": "Description",
+  "@weatherDescriptionLabel": {
+    "description": "Label for the description row in the weather detail screen."
+  },
+  "weatherLongDescriptionLabel": "Long Description",
+  "@weatherLongDescriptionLabel": {
+    "description": "Label for the long description row in the weather detail screen."
+  },
+  "weatherDescriptionHeader": "Weather Description",
+  "@weatherDescriptionHeader": {
+    "description": "Header for the description section in the weather detail screen."
+  },
+  "weatherBasicDescriptionHeader": "Basic Weather Information",
+  "@weatherBasicDescriptionHeader": {
+    "description": "Header for the basic weather section in the weather detail screen."
+  },
+  "degreesCelsius": "{value}\u00b0C",
+  "@degreesCelsius": {
+    "description": "Used to format temperatures. DO NOT change to Fahrenheit or Kelvin without adding conversion code. Changing this string only affects the label, not the actual temperature.",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "hPaPressure": "{value} hPa",
+  "@hPaPressure": {
+    "description": "Used to format pressures in hPa. DO NOT change to PSI, atmospheres or mm Hg without adding conversion code. Changing this string only affects the label, not the actual pressure.",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "percent": "{value}%",
+  "@percent": {
+    "description": "Used to format percentages.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "weatherTemperatureLabel": "Temperature",
+  "@weatherTemperatureLabel": {
+    "description": "Label for the temperature row in the weather detail screen."
+  },
+  "weatherPressureLabel": "Pressure",
+  "@weatherPressureLabel": {
+    "description": "Label for the pressure row in the weather detail screen."
+  },
+  "weatherSeaPressureLabel": "Sea-level Pressure",
+  "@weatherSeaPressureLabel": {
+    "description": "Label for the sea-level pressure row in the weather detail screen."
+  },
+  "weatherGroundPressureLabel": "Ground-level Pressure",
+  "@weatherGroundPressureLabel": {
+    "description": "Label for the ground-level pressure row in the weather detail screen."
+  },
+  "weatherHumidityLabel": "Humidity",
+  "@weatherHumidityLabel": {
+    "description": "Label for the humidity row in the weather detail screen."
+  },
+  "weatherCloudsLabel": "Clouds",
+  "@weatherCloudsLabel": {
+    "description": "Label for the clouds row in the weather detail screen."
+  },
+  "weatherMinTemperatureLabel": "Minimum Temperature",
+  "@weatherMinTemperatureLabel": {
+    "description": "Label for the min temperature row in the weather detail screen."
+  },
+  "weatherMaxTemperatureLabel": "Maximum Temperature",
+  "@weatherMaxTemperatureLabel": {
+    "description": "Label for the max temperature row in the weather detail screen."
+  },
+  "weatherDayHeader": "Day Information",
+  "@weatherDayHeader": {
+    "description": "Header for the day section in the weather detail screen."
+  },
+  "sunriseLabel": "Sunrise",
+  "@sunriseLabel": {
+    "description": "Label for the sunrise row in the weather detail screen."
+  },
+  "sunsetLabel": "Sunset",
+  "@sunsetLabel": {
+    "description": "Label for the sunset row in the weather detail screen."
+  },
+  "weatherRainHeader": "Rain Information",
+  "@weatherRainHeader": {
+    "description": "Header for the rain section in the weather detail screen."
+  },
+  "millimetres": "{value} mm",
+  "@millimetres": {
+    "description": "Used to represent values in millimetres. DO NOT change the units to inches or centimetres without writing the proper conversion code first.",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "weatherRainOneHourLabel": "Past 1 hour",
+  "@weatherRainOneHourLabel": {
+    "description": "Label for the rain one hour row in the weather detail screen."
+  },
+  "weatherRainThreeHoursLabel": "Past 3 hours",
+  "@weatherRainThreeHoursLabel": {
+    "description": "Label for the rain three hours row in the weather detail screen."
+  },
+  "creditsToOpenWeatherMap": "Weather information from OpenWeather\u2122 (https://openweathermap.org/), which is made available here under the Open Database License (ODbL) (https://opendatacommons.org/licenses/odbl/1-0/).",
+  "@creditsToOpenWeatherMap": {
+    "description": "Label for the bottom of the weather detail page to provide license information for the weather data from OpenWeather (TM)."
+  },
+  "loginAppBarHeader": "Sign in",
+  "@loginAppBarHeader": {
+    "description": "AppBar title for the login screen."
+  },
+  "loginButtonHeader": "Sign in",
+  "@loginButtonHeader": {
+    "description": "AppBar title for the login button."
+  },
+  "loginScreenHeader": "Log into AntNupTracker",
+  "@loginScreenHeader": {
+    "description": "AppBar title for the login screen."
+  },
+  "enterUsernameMessage": "Please enter your username.",
+  "@enterUsernameMessage": {
+    "description": "Error prompt on the login screen if username is not entered."
+  },
+  "enterPasswordMessage": "Please enter your password.",
+  "@enterPasswordMessage": {
+    "description": "Error prompt on the login screen if password is not entered."
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Text hint for the password field."
+  },
+  "loginButton": "Sign in",
+  "@loginButton": {
+    "description": "Text for the sign in button."
+  },
+  "infoButton": "Info",
+  "@infoButton": {
+    "description": "Tooltip for the info button."
+  },
+  "logoutButton": "Sign out",
+  "@logoutButton": {
+    "description": "Text for the sign out button."
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Text for an edit button."
+  },
+  "editingFlightAppBar" : "Edit Flight {id}",
+  "@editingFlightAppBar": {
+    "description" : "App bar header for flight editing form.",
+    "placeholders": {
+      "id": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "newFlightAppBar" : "New Flight Record",
+  "@newFlightAppBar": {
+    "description": "App bar header for flight editing form."
+  },
+  "taxonomy": "Taxonomy",
+  "@taxonomy": {
+    "description": "Header for the taxonomy section of the flight form."
+  },
+  "flightSizeHeader": "Flight Size",
+  "@flightSizeHeader": {
+    "description": "Header for the flight size section of the flight form."
+  },
+  "changeLocationOnMap": "Change location on map",
+  "@changeLocationOnMap": {
+    "description": "Label for change location button."
+  },
+  "uploadImage": "Upload Image",
+  "@uploadImage": {
+    "description": "Label for cell in flight form to toggle uploading of image."
+  },
+  "addNewFlightButton": "New Flight",
+  "@addNewFlightButton": {
+    "description": "Tooltip text for FAB to add enter new flight record."
+  },
+  "invalidGenus": "Please enter a valid genus.",
+  "@invalidGenus": {
+    "description": "Error message to show when invalid genus has been entered."
+  },
+  "invalidSpecies": "Please enter a valid species.",
+  "@invalidSpecies": {
+    "description": "Error message to show when invalid species has been entered."
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Text for cancel button in alerts."
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "Text to use for OK button."
+  },
+  "latitude": "Latitude",
+  "@latitude": {
+    "description": "Label for latitude."
+  },
+  "longitude": "Longitude",
+  "@longitude": {
+    "description": "Label for longitude."
+  },
+  "invalidCoordinate": "Invalid coordinate",
+  "@invalidCoordinate": {
+    "description": "Error message to show when the user enters an incorrectly-formatted coordinate."
+  },
+  "chooseImageSource": "Choose Image Source",
+  "@chooseImageSource": {
+    "description": "Header for alert to choose image source."
+  },
+  "camera": "Camera",
+  "@camera": {
+    "description": "Label for device camera."
+  },
+  "gallery": "Photo Library",
+  "@gallery": {
+    "description": "Label for choosing from device photos."
+  },
+  "noImage": "No Image",
+  "@noImage": {
+    "description": "Label for choosing no image."
+  },
+  "emptyGenus": "Please enter genus.",
+  "@emptyGenus": {
+    "description": "Message to display when genus field is empty."
+  },
+  "emptySpecies": "Please enter species.",
+  "@emptySpecies": {
+    "description": "Message to display when species field is empty."
+  },
+  "pleaseSelectImage": "Select an image.",
+  "@pleaseSelectImage": {
+    "description": "Error message when no image selected but switch is toggled on."
+  },
+  "uploadingFlight": "Uploading Flight",
+  "@uploadingFlight": {
+    "description": "Alert title when a new flight is uploading."
+  },
+  "uploadingComment": "Uploading Comment",
+  "@uploadingComment": {
+    "description": "Alert title when a new comment is uploading."
+  },
+  "getCurrentLocation": "Current Location",
+  "@getCurrentLocation": {
+    "description": "Label for button to use current location in location picker."
+  },
+  "update": "Update",
+  "@update": {
+    "description": "Tooltip text for updating a flight."
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Tooltip text for saving a new flight."
+  },
+  "createComment": "New Comment",
+  "@createComment": {
+    "description": "Header and tooltip for comment creation."
+  },
+  "editComment": "Edit Comment",
+  "@editComment": {
+    "description": "Header and tooltip for comment editing."
+  },
+  "comment": "Comment",
+  "@comment": {
+    "description": "Label for comment input field."
+  },
+  "emptyComment": "Please enter your comment.",
+  "@emptyComment": {
+    "description": "Error message if no comment is inputted."
+  },
+  "verifyFlightHeader": "Verify Flight",
+  "@verifyFlightHeader": {
+    "description": "Header for prompt for verifying flight."
+  },
+  "verifyFlightBody": "Please confirm that you wish to mark this flight as verified.",
+  "@verifyFlightBody": {
+    "description": "Body text for prompt for verifying the flight."
+  },
+  "unVerifyFlightHeader": "Un-Verify Flight",
+  "@unVerifyFlightHeader": {
+    "description": "Header for prompt for un-verifying flight."
+  },
+  "unVerifyFlightBody": "Please confirm that you wish to un-mark this flight as verified.",
+  "@unVerifyFlightBody": {
+    "description": "Body text for prompt for un-verifying the flight."
+  },
+  "verifyingFlight": "Verifying Flight",
+  "@verifyingFlight": {
+    "description": "Header for loading alert while flight is being verified."
+  },
+  "unVerifyingFlight": "Un-Verifying Flight",
+  "@unVerifyingFlight": {
+    "description": "Header for loading alert while flight is being un-verified."
+  },
+  "addImage": "Add Image",
+  "@addImage": {
+    "description": "Tooltip for button to add more images."
+  },
+  "filteringAndSorting": "Filtering and Sorting",
+  "@filteringAndSorting": {
+    "description": "Tooltip and header for filtering dialog."
+  },
+  "filtering": "Filtering",
+  "@filtering": {
+    "description": "Label for the filtering section."
+  },
+  "sorting": "Sorting",
+  "@sorting": {
+    "description": "Label for the sorting section."
+  },
+  "sortBy": "Sort by",
+  "@sortBy": {
+    "description": "Label for the sorting choice."
+  },
+  "distance": "Distance from",
+  "@distance": {
+    "description": "Label for sorting by distance option."
+  },
+  "taxonomyFilter": "Filter by Taxonomy",
+  "@taxonomyFilter": {
+    "description": "Label for filtering by taxonomy."
+  },
+  "ascending": "Ascending",
+  "@ascending": {
+    "description": "Indicate ascending."
+  },
+  "descending": "Descending",
+  "@descending": {
+    "description": "Indicate descending."
+  },
+  "fromLocation": "From {location}",
+  "@fromLocation": {
+    "description": "Label for location from which distance is measured.",
+    "placeholders" : {
+      "location": {
+        "type": "String",
+        "example": "(30.0\u00b0N, 74.0\u00b0W)"
+      }
+    }
+  },
+  "filterByDate": "Filter by Date",
+  "@filterByDate": {
+    "description": "Header for choice to filter by date."
+  },
+  "minDate": "After",
+  "@minDate": {
+    "description": "Label for date filtering after a certain date."
+  },
+  "maxDate": "Before",
+  "@maxDate": {
+    "description": "Label for date filtering before a certain date."
+  },
+  "clear": "Clear",
+  "@clear": {
+    "description": "Tooltip for icon to clear text."
+  },
+  "filterByTaxonomy": "Filter by Taxonomy",
+  "@filterByTaxonomy": {
+    "description": "Header for choice to filter by taxonomy."
+  },
+  "filteringByGenera": "{count,plural, =1{Filtering by {count} genus} other{Filtering by {count} genera}}",
+  "@filteringByGenera": {
+    "description": "Label for the number of genera currently used to filter.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "filteringBySpecies": "Filtering by {count} species",
+  "@filteringBySpecies": {
+    "description": "Label for the number of species currently used to filter.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Tooltip to indicate done button."
+  },
+  "filteringGenera": "Filtering Genera",
+  "@filteringGenera": {
+    "description": "Header for section with filtering genera."
+  },
+  "filteringSpecies": "Filtering Species",
+  "@filteringSpecies": {
+    "description": "Header for section with filtering species."
+  },
+  "notifyingGenera": "Selected Genera",
+  "@notifyingGenera": {
+    "description": "Header for section with selected genera for notifications."
+  },
+  "notifyingSpecies": "Selected Species",
+  "@notifyingSpecies": {
+    "description": "Header for section with selected species for notifications."
+  },
+  "selectGenus": "Select Genus",
+  "@selectGenus": {
+    "description": "Header for genus selection screen."
+  },
+  "selectSpecies": "Select Species",
+  "@selectSpecies": {
+    "description": "Header for species selection screen."
+  },
+  "entireGenus": "Entire Genus",
+  "@entireGenus": {
+    "description": "Label to indicate selecting the entire genus (for filtering or notifications)."
+  },
+  "filterByImages": "Filter for Flights with Images",
+  "@filterByImages": {
+    "description": "Header for choice to filter by images."
+  },
+  "hasImages": "Has Images",
+  "@hasImages": {
+    "description": "Option for filtering to indicated that flight has images"
+  },
+  "noImages": "No Images",
+  "@noImages": {
+    "description": "Option for filtering to indicated that flight has no images"
+  },
+  "filterByVerification": "Filter by Verification Level",
+  "@filterByVerification" : {
+    "description": "Header for choice to filter by verification level."
+  },
+  "filteringByUserRole": "User Role",
+  "@filteringByUserRole": {
+    "description": "Label for filtering by user role."
+  },
+  "filteringByVerification": "Verification",
+  "@filteringByVerification": {
+    "description": "Label for filtering by verification."
+  },
+  "verified": "Verified",
+  "@verified": {
+    "description": "Option for filtering only verified flights."
+  },
+  "notVerified": "Not Verified",
+  "@notVerified": {
+    "description": "Option for filtering only not-verified flights."
+  },
+  "welcomeHeader": "Welcome to AntNupTracker",
+  "@welcomeHeader": {
+    "description": "Header for the welcome screen."
+  },
+  "viewFlightList": "View Flight List",
+  "@viewFlightList": {
+    "description": "Text for button to close welcome screen."
+  },
+  "welcomeBullet1": "View ant nuptial flight records",
+  "@welcomeBullet1": {
+    "description": "First bullet point on welcome screen."
+  },
+  "welcomeBullet2": "Record ant nuptial flight data",
+  "@welcomeBullet2": {
+    "description": "Second bullet point on welcome screen."
+  },
+  "welcomeBullet3": "Comment on flight records",
+  "@welcomeBullet3": {
+    "description": "Third bullet point on welcome screen."
+  },
+  "welcomeBodyText": "With your help, we are building an open and publicly-accessible database of ant nuptial flights to enable future research into the links between ant nuptial flight timing and environmental changes.",
+  "@welcomeBodyText": {
+    "description": "Body text beneath the bullet points."
+  },
+  "welcomeBottomText": "Welcome to the community!",
+  "@welcomeBottomText": {
+    "description": "Welcome text below main purpose screen."
+  },
+  "moreAboutUs": "More About Us",
+  "@moreAboutUs": {
+    "description": "Text for about us button on welcome screen."
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Text for privacy policy button."
+  },
+  "homePageButton": "AntNupTracker Homepage",
+  "@homePageButton": {
+    "description": "Header for button to go to homepage."
+  },
+  "termsOfUse": "Terms of Use",
+  "@termsOfUser": {
+    "description": "Header for button linking to terms of use."
+  },
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Header for button linking to send email."
+  },
+  "moreInformation": "More Information",
+  "@moreInformation": {
+    "description": "Header for the More Information section of the user profile screen."
+  },
+  "userInformation": "User Information",
+  "@userInformation": {
+    "description": "Header for the user info section in the profile screen."
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Button text for forgotten password."
+  },
+  "createNewUser": "Create Account",
+  "@createNewUser": {
+    "description": "Button text for create account."
+  },
+  "notificationSettings": "Notification Settings",
+  "@notificationSettings": {
+    "description": "Header for user notification section."
+  },
+  "updatingSettings": "Updating Settings",
+  "@updatingSettings": {
+    "description": "Header to indicate updating settings."
+  },
+  "loadingNotificationSettings": "Loading Notification Settings",
+  "@loadingNotificationSettings": {
+    "description": "Text to indicate that notification settings are being loaded."
+  },
+  "notifyingByGenera": "{count,plural, =1{Notifying about {count} genus} other{Notifying about {count} genera}}",
+  "@notifyingByGenera": {
+    "description": "Label for the number of genera currently used for notifications.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "notifyingBySpecies": "Notifying about {count} species",
+  "@notifyingBySpecies": {
+    "description": "Label for the number of species currently used for notifications.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Header for notification preferences screen."
+  },
+  "loadingComments": "Loading Comments...",
+  "@loadingComments": {
+    "description": "Text to show when loading comments."
+  },
+  "initialLoadingStage": "Setting up...",
+  "@initialLoadingStage": {
+    "description": "Caption for initial loading."
+  },
+  "credentialLoadingStage": "Loading Credentials...",
+  "@credentialLoadingStage": {
+    "description": "Caption for credential loading."
+  },
+  "taxonomyLoadingStage": "Loading Taxonomy...",
+  "@taxonomyLoadingStage": {
+    "description": "Caption for taxonomy loading."
+  },
+  "flightLoadingStage": "Loading Flights...",
+  "@flightLoadingStage": {
+    "description": "Caption for flight loading."
+  },
+  "filteringLoadingStage": "Loading Filtering...",
+  "@filteringLoadingStage": {
+    "description": "Caption for filtering loading."
+  },
+  "doneLoadingStage": "Finished Loading...",
+  "@doneLoadingStage": {
+    "description": "Caption for done loading."
+  },
+  "gettingLocation": "Getting Current Location",
+  "@gettingLocation": {
+    "description": "Indicates that the app is getting the current location."
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Label for Next button."
+  },
+  "previous": "Previous",
+  "@previous": {
+    "description": "Label for Previous button."
+  },
+  "setUpSorting": "Set up Sorting",
+  "@setUpSorting" : {
+    "description": "Header for welcome section about sorting"
+  },
+  "setUpFiltering": "Set up Filtering",
+  "@setUpFiltering" : {
+    "description": "Header for welcome section about filtering"
+  },
+  "noImageSourcesHeader": "No Valid Image Sources",
+  "@noImageSourcesHeader": {
+    "description": "Header for alert when attempting to add image but no permissions granted."
+  },
+  "noImageSourcesContent": "To upload images, please change your permissions to allow access to either your camera or photo library.",
+  "@noImageSourcesContent": {
+    "description": "Content for alert when attempting to add image but no permissions granted."
+  },
+  "locationServicesDisabledHeader": "Location Services Disabled",
+  "@locationServicesDisabledHeader": {
+    "description": "Header for alert when attempting to get current location but no permissions granted."
+  },
+  "locationServicesDisabledContent": "In order to use this feature, you must enable location services in your device's settings.",
+  "@locationServicesDisabledContent": {
+    "description": "Content for alert when attempting to get current location but no permissions granted."
+  },
+  "appPermissionsHeader": "App Permissions",
+  "@appPermissionsHeader": {
+    "description": "Header for app permissions screen."
+  },
+  "appPermissionsSubtitle": "Some features in our app require extra permissions. These are completely optional and can be enabled or disabled later in your device settings.",
+  "@appPermissionsSubtitle": {
+    "description": "Subtitle on app permissions screen."
+  },
+  "location": "Location",
+  "@location": {
+    "description": "Header for the location section of the permissions screen"
+  },
+  "locationPermissionDetails": "Your location can be used to help record nuptial flights from the field and filter existing flight records based on distance from your current location. If you do not accept, you can still manually select a location for both flight recording and filtering. If you share your location when uploading a recent flight, your location (rounded to three decimal places) will be shared with a third-party service (OpenWeather Map) in order to get the weather.",
+  "@locationPermissionDetails": {
+    "description": "Explanation of location permissions."
+  },
+  "cameraPermissionDetails": "You can use your camera to upload images of nuptial flights. If you don't accept, you can still upload flights without images or with images from your gallery.",
+  "@cameraPermissionDetails": {
+    "description": "Explanation of camera permissions."
+  },
+  "galleryPermissionDetails": "You can upload flight images from your device's image gallery. If you don't accept, you can still record flight information without images or upload images using your camera. This permission must be granted to be able to save pictures you take with the camera in our app.",
+  "@galleryPermissionDetails": {
+    "description": "Explanation of gallery permissions."
+  },
+  "permissionsScreenBottomNote": "After you press 'Next', you will be prompted to accept each permission. Remember, you can always change your settings later.",
+  "@permissionsScreenBottomNote": {
+    "description": "Bottom text on permissions screen."
+  },
+  "packagesInfo": "Package List and Licenses",
+  "@packagesInfo": {
+    "description": "Header for screen with package info."
+  },
+  "openPackageSite": "Open Package Website",
+  "@openPackageSite": {
+    "description": "Text to direct user to package website."
+  },
+  "applicationLegalese": "Copyright (c) 2020-2022, Abouheif Lab.",
+  "@applicationLegalese": {
+    "description": "Text to show on Licenses page."
+  },
+  "loadingImages": "Loading Images...",
+  "@loadingImages": {
+    "description": "Text to show that images are loading."
+  },
+  "updatingLocation": "Updating Location",
+  "@updatingLocation": {
+    "description": "Text to display while updating location in filtering screen."
+  }
+}
