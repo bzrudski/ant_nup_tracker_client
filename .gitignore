@@ -61,3 +61,6 @@ app.*.map.json
 # Ignore images related to release
 /assets/Release/*
 /web/icons/
+
+# Ignore proprietary resources
+/assets/proprietary/openweather/

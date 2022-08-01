@@ -59,7 +59,9 @@ class FlightDetailFetcher {
       try {
         final json = jsonDecode(res.body);
         flight = Flight.fromJson(json);
-      } catch (err) {
+      } catch (err, stacktrace) {
+        // print(err);
+        // print(stacktrace);
         throw JsonException();
       }
 

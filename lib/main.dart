@@ -38,6 +38,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'location_picker.dart';
 import 'dark_mode_theme_ext.dart';
+import 'taxonomy_manager.dart';
 
 void main() => runApp(const AntNupTrackerApp());
 

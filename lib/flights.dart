@@ -34,6 +34,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:lat_lng_to_timezone/lat_lng_to_timezone.dart';
 import 'package:timezone/timezone.dart';
+import 'taxonomy_manager.dart';
 
 part 'flights.g.dart';
 
@@ -53,7 +54,9 @@ class Genus implements Nameable {
   static List<Genus> getAll() => List.unmodifiable(_genusStore.values);
 
   /// Private constructor for the Genus class.
-  Genus._(this.id, this.name);
+  Genus._(this.id, this.name){
+    _genusStore[id] = this;
+  }
 
   @override
   bool operator ==(Object other) {
@@ -124,6 +127,7 @@ class Species implements Nameable {
 
   Species._(this.id, this.genus, this.name) {
     genus._species.add(this);
+    _speciesStore[id] = this;
   }
 
   @override
@@ -166,8 +170,13 @@ class Species implements Nameable {
   }
 
   static Iterable<Species> loadSpeciesFromJson(
-          Iterable<dynamic> jsonList) =>
-      jsonList.map((e) => Species.fromJson(e));
+          Iterable<dynamic> jsonList) {
+    final species = jsonList.map((e) => Species.fromJson(e));
+
+    Species._speciesStore.addEntries(species.map((e) => MapEntry(e.id, e)));
+
+    return species;
+  }
 
   factory Species.fromJson(Map<String, dynamic> json) {
     try {
@@ -177,10 +186,12 @@ class Species implements Nameable {
       final genus = Genus.get(genusId);
       final name = json["name"] as String;
       final id = json["id"] as int;
+      // print("Considering species named $name with id $id");
       return Species._(id, genus, name);
       // return _speciesStore.putIfAbsent(id, () => Species._(id, genus, name));
     } catch (err, stacktrace) {
       // print("Error creating species from JSON!!!!");
+      // print(err);
       // print(stacktrace);
       throw JsonException();
     }
@@ -289,28 +300,14 @@ Future<void> loadTaxonomy() async {
 
   await FlightDatabase.shared.initializeDatabase(clear: true);
   await loadTaxonomyFromServer();
+  // print("Loaded taxonomy from server!");
+  // print("Loaded genera: ${Genus._genusStore.values}");
+  // print("Loaded species: ${Species._speciesStore.values}");
   await FlightDatabase.shared.addGenera(Genus._genusStore.values);
   await FlightDatabase.shared.addManySpecies(Species._speciesStore.values);
 
   final prefs = await SharedPreferences.getInstance();
   prefs.setInt("taxonomyVersion", newTaxonomyTuple.item2);
-}
-
-Future<void> loadTaxonomyFromServer() async {
-  final allGenera = await loadGenera();
-
-  final entries = allGenera.map((e) => MapEntry(e.id, e));
-  Genus._genusStore.clear();
-  Genus._genusStore.addEntries(entries);
-
-  final allSpecies = <Species>[];
-  for (var genus in allGenera) {
-    allSpecies.addAll(await loadSpeciesForGenus(genus));
-  }
-
-  final speciesEntries = allSpecies.map((e) => MapEntry(e.id, e));
-  Species._speciesStore.clear();
-  Species._speciesStore.addEntries(speciesEntries);
 }
 
 Future<void> loadTaxonomyFromDatabase() async {

@@ -4,3 +4,4 @@
 #include "Secrets.xcconfig"
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev
 APP_NAME = AntNupDev
+PRODUCT_BUNDLE_IDENTIFIER = com.brudski.NuptialTrackerDEV

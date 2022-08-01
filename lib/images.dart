@@ -201,7 +201,9 @@ Future<List<FlightImage>> fetchImagesForFlight(int id) async {
           rawList.map((e) => FlightImage.fromJson(e)).toList();
 
       return convertedList;
-    } catch (error) {
+    } catch (error, stacktrace) {
+      // print(error);
+      // print(stacktrace);
       throw JsonException();
     }
   } on IOException {

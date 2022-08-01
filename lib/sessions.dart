@@ -21,6 +21,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:ant_nup_tracker/common_ui_elements.dart';
+import 'package:ant_nup_tracker/edit_user_profile.dart';
 import 'package:ant_nup_tracker/exceptions.dart';
 import 'package:ant_nup_tracker/filtering.dart';
 import 'package:ant_nup_tracker/flights.dart';
@@ -136,7 +137,9 @@ class SessionManager {
       return false;
     } on LocalisableException {
       rethrow;
-    } on Exception {
+    } on Exception catch (error, stacktrace) {
+      // print(error);
+      // print(stacktrace);
       throw JsonException();
     }
   }
@@ -150,6 +153,10 @@ class SessionManager {
       // print(stacktrace);
       return false;
     }
+  }
+
+  void updateUserInformation(User user) {
+    _session = Session(_session!.token, _session!.deviceId, user);
   }
 }
 
@@ -352,7 +359,9 @@ Future<TaxonomyFilter> _getNotificationSettings() async {
       genera = generaIds.map((id) => Genus.get(id));
       // genera = rawGeneraList.map((e) => Genus.fromJson(e));
       // print("Loaded genera: $genera");
-    } catch (e) {
+    } catch (error, stacktrace) {
+      // print(error);
+      // print(stacktrace);
       throw JsonException();
     }
 
@@ -607,7 +616,9 @@ class _LoginFormState extends State<LoginForm> {
           textAlign: TextAlign.center,
         ),
         Image(
-          image: Theme.of(context).isDarkMode ? const AssetImage("assets/cartoon_ant/dark/cartoon_ant.png") : const AssetImage("assets/cartoon_ant/cartoon_ant.png"),
+          image: Theme.of(context).isDarkMode
+              ? const AssetImage("assets/cartoon_ant/dark/cartoon_ant.png")
+              : const AssetImage("assets/cartoon_ant/cartoon_ant.png"),
           height: 128,
         ),
         // Image.asset(name),
@@ -835,6 +846,18 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     Navigator.of(context).pop(true);
   }
 
+  Future<void> editUserInfo() async {
+    // Actions for editing user profile information go here.
+    final didChangeUserInfo = await Navigator.of(context).push(
+        MaterialPageRoute<bool>(
+            builder: (context) => const EditUserProfileScreen(),
+            fullscreenDialog: true));
+
+    if (didChangeUserInfo ?? false) {
+      setState(() {});
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -842,13 +865,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
         title: Text(SessionManager.shared.session!.username),
         actions: [
           IconButton(
-            onPressed: logout,
-            icon: const Icon(Icons.logout),
-            tooltip: AppLocalizations.of(context)!.logoutButton,
+            onPressed: editUserInfo,
+            icon: const Icon(Icons.edit),
+            tooltip: AppLocalizations.of(context)!.edit,
           )
         ],
       ),
-      body: SafeArea(child: _buildUserTable(SessionManager.shared.session!.user)),
+      body:
+          SafeArea(child: _buildUserTable(SessionManager.shared.session!.user)),
     );
   }
 
@@ -945,11 +969,18 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             trailing: const Icon(Icons.code),
             onTap: () async {
               // Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PackagesScreen()));
-              showLicensePage(context: context, applicationLegalese: appLocalization.applicationLegalese, applicationIcon: Image(
-                image: Theme.of(context).isDarkMode ? const AssetImage("assets/cartoon_ant/dark/cartoon_ant.png") : const AssetImage("assets/cartoon_ant/cartoon_ant.png"),
-                height: 80,
-                matchTextDirection: true,
-              ));
+              showLicensePage(
+                  context: context,
+                  applicationLegalese: appLocalization.applicationLegalese,
+                  applicationIcon: Image(
+                    image: Theme.of(context).isDarkMode
+                        ? const AssetImage(
+                            "assets/cartoon_ant/dark/cartoon_ant.png")
+                        : const AssetImage(
+                            "assets/cartoon_ant/cartoon_ant.png"),
+                    height: 80,
+                    matchTextDirection: true,
+                  ));
             },
           ),
         ],

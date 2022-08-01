@@ -48,7 +48,7 @@ dependencies:
   lints: ^1.0.1
   flutter_lints: ^1.0.4
   cached_network_image: ^3.1.0
-  scrollable_positioned_list: ^0.2.0-nullsafety.0
+  scrollable_positioned_list: ^0.2.3
   firebase_core: ^1.10.0
   firebase_messaging: ^11.1.0
   shared_preferences: ^2.0.6
@@ -88,6 +88,7 @@ flutter:
   assets:
      - assets/cartoon_ant/
      - assets/ant_circles/
+     - assets/proprietary/openweather/
      - fonts/Dosis/OFL.txt
      - fonts/Open_Sans/LICENSE.txt
 #     - images/a_dot_burr.jpeg

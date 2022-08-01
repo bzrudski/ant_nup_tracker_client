@@ -450,6 +450,23 @@ class NoFlightResultsException implements LocalisableException {
   }
 }
 
+class EditUserException implements LocalisableException {
+  final int _status;
+
+  EditUserException(this._status);
+
+  @override
+  String getLocalisedDescription(BuildContext context) {
+    return AppLocalizations.of(context)!.editUserExceptionBody(_status);
+  }
+
+  @override
+  String getLocalisedName(BuildContext context) {
+    return AppLocalizations.of(context)!.editUserExceptionHeader;
+  }
+
+}
+
 class ExceptionWidget extends StatelessWidget {
   final LocalisableException _exception;
   final void Function()? _tryAgainAction;

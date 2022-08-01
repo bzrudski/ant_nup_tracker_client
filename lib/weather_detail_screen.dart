@@ -18,6 +18,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import 'package:ant_nup_tracker/dark_mode_theme_ext.dart';
 import 'package:ant_nup_tracker/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -170,6 +171,14 @@ class _WeatherDetailScreenState extends DetailScreenState<int, Weather> {
         ),
         const Divider(
           thickness: 2,
+        ),
+        Image(
+          image: Theme.of(context).isDarkMode
+              ? const AssetImage(
+                  "assets/proprietary/openweather/dark/openweather.png")
+              : const AssetImage(
+                  "assets/proprietary/openweather/openweather.png"),
+          height: 200,
         )
       ],
     );

@@ -174,7 +174,7 @@ class _UserDetailScreenState extends DetailScreenState<String, User> {
     //     Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
 
     return ListView(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(16.0),
       children: [
         _buildTextLabelDetailRow(
             label: _appLocalizations.usernameLabel, detail: user.username),

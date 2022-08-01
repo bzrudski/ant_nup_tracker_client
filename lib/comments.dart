@@ -70,7 +70,9 @@ Future<List<Comment>> getCommentsForFlight(int id) async {
       final rawComments = jsonDecode(utf8.decode(response.bodyBytes)) as List<dynamic>;
       final comments = rawComments.map((e) => Comment.fromJson(e)).toList();
       return comments;
-    } catch (e) {
+    } catch (error, stacktrace) {
+      // print(error);
+      // print(stacktrace);
       throw JsonException();
     }
 

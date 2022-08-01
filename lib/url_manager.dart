@@ -59,6 +59,7 @@ class UrlManager {
   final _validateUrl = "verify";
   final _loadTaxonomyUrl = "latest-taxonomy";
   final _taxonomyVersionUrl = "taxonomy-version";
+  final _taxonomyUrl = "taxonomy";
   final _generaUrl = "genera";
   final _speciesUrl = "species";
   final _aboutUrl = "about";
@@ -95,6 +96,7 @@ class UrlManager {
   Uri get myGeneraUrl => apiUrl.resolve("$_myGeneraUrl/");
   Uri get loadTaxonomyUrl => apiUrl.resolve("$_loadTaxonomyUrl/");
   Uri get taxonomyVersionUrl => apiUrl.resolve("$_taxonomyVersionUrl/");
+  Uri get taxonomyUrl => apiUrl.resolve("$_taxonomyUrl/");
   Uri get generaUrl => apiUrl.resolve("$_generaUrl/");
   Uri get createAccountUrl => _baseUrl.resolve("$_createAccountUrl/");
   Uri get usersUrl => apiUrl.resolve("$_usersUrl/");

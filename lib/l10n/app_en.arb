@@ -128,7 +128,7 @@
   "@weatherHeader": {
     "description": "Header for the weather section of the flight detail screen."
   },
-  "weatherLabel": "Weather from OpenWeather Map",
+  "weatherLabel": "Weather data from OpenWeather™",
   "@weatherLabel": {
     "description": "Label for the weather button of the flight detail screen."
   },
@@ -332,7 +332,7 @@
   "@incorrectCredentialsExceptionHeader": {
     "description": "Header to display on alert when `IncorrectCredentialsException` is caught."
   },
-  "forbiddenAccessExceptionBody": "Your account is not active. This is probably the result of not activating your account when you created it or your account may be flagged. Please contact us to fix this problem.",
+  "forbiddenAccessExceptionBody": "You can't access this resource. It may mean that your account is inactive. This is probably the result of not activating your account when you created it or your account may be flagged. Please contact us to fix this problem.",
   "@forbiddenAccessExceptionBody": {
     "description": "Message to display on alert when a `ForbiddenAccessException` is caught."
   },
@@ -518,6 +518,20 @@
   "@noFlightResultsExceptionHeader": {
     "description": "Header to display on alert when `NoFlightResultsException` is caught."
   },
+  "editUserExceptionBody": "Error updating your profile. The server responded with an error code (response code {code}). Please try again. If the problem persists, please contact us.",
+  "@editUserExceptionBody": {
+    "description": "Message to display on alert when a `EditUserException` is caught.",
+    "placeholders": {
+      "code": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "editUserExceptionHeader": "Error Editing User Profile",
+  "@editUserExceptionHeader": {
+    "description": "Header to display in alert when `EditUserException` is thrown."
+  },
   "tryAgainButton": "Try Again",
   "@tryAgainButton": {
     "description": "Label for 'try again' button on alert dialogs."
@@ -692,7 +706,7 @@
   "@weatherRainThreeHoursLabel": {
     "description": "Label for the rain three hours row in the weather detail screen."
   },
-  "creditsToOpenWeatherMap": "Weather information from OpenWeather\u2122 (https://openweathermap.org/), which is made available here under the Open Database License (ODbL) (https://opendatacommons.org/licenses/odbl/1-0/).",
+  "creditsToOpenWeatherMap": "Weather data provided by OpenWeather™ (https://openweathermap.org/), which is made available here under the Open Database License (ODbL) (https://opendatacommons.org/licenses/odbl/1-0/).",
   "@creditsToOpenWeatherMap": {
     "description": "Label for the bottom of the weather detail page to provide license information for the weather data from OpenWeather (TM)."
   },
@@ -1247,5 +1261,29 @@
   "updatingLocation": "Updating Location",
   "@updatingLocation": {
     "description": "Text to display while updating location in filtering screen."
+  },
+  "editUserProfile": "Edit User Profile",
+  "@editUserProfile": {
+    "description": "Header for screen to edit user profile."
+  },
+  "enterInstitutionMessage": "Please enter your institution.",
+  "@enterInstitutionMessage": {
+    "description": "Error prompt on the user modification screen if institution is not entered."
+  },
+  "cannotEditUsername": "Contact us to edit your username.",
+  "@cannotEditUsername": {
+    "description": "Caption for profile editing screen, indicating that username can't be edited."
+  },
+  "cannotEditRole": "Contact us to edit your role.",
+  "@cannotEditRole": {
+    "description": "Caption for profile editing screen, indicating that role can't be edited."
+  },
+  "optionalField": "This field is optional.",
+  "@optionalField": {
+    "description": "Indicates that a field is optional."
+  },
+  "updatingProfileDetails": "Updating Profile Details",
+  "@updatingProfileDetails": {
+    "description": "Header for alert indicating that user profile is being updated."
   }
 }
