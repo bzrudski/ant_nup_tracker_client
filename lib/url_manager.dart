@@ -38,7 +38,7 @@ class UrlManager {
   /// For custom servers, the [base] defines the url for the server.
   UrlManager._(String base) :
     _baseUrl = Uri.parse(base);
-  
+
   static final shared = UrlManager._("https://www.antnuptialflights.com/");
 
   final _apiUrl = "api";
@@ -105,6 +105,8 @@ class UrlManager {
   Uri get privacyUrl => _baseUrl.resolve("$_privacyUrl/");
   Uri get termsUrl => _baseUrl.resolve("$_termsUrl/");
   Uri get contactUrl => Uri.parse(_emailAddress);
+
+  final openWeatherUrl = "https://openweathermap.org/";
 
   Uri urlForFlight(int id) {
     return listUrl.resolve("$id/");

@@ -697,7 +697,7 @@ class _LoginFormState extends State<LoginForm> {
         _isLoading = true;
       });
       _triggerLogin(
-        username: _usernameController.text,
+        username: _usernameController.text.trim(),
         password: _passwordController.text,
       );
     }

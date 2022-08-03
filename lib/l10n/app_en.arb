@@ -710,6 +710,10 @@
   "@creditsToOpenWeatherMap": {
     "description": "Label for the bottom of the weather detail page to provide license information for the weather data from OpenWeather (TM)."
   },
+  "moreAboutOpenWeather": "More about OpenWeather™",
+  "@moreAboutOpenWeather": {
+    "description": "Label for hyperlink to OpenWeather™."
+  },
   "loginAppBarHeader": "Sign in",
   "@loginAppBarHeader": {
     "description": "AppBar title for the login screen."

@@ -20,6 +20,8 @@
 
 import 'package:ant_nup_tracker/dark_mode_theme_ext.dart';
 import 'package:ant_nup_tracker/detail_screen.dart';
+import 'package:ant_nup_tracker/launch_url.dart';
+import 'package:ant_nup_tracker/url_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -172,13 +174,16 @@ class _WeatherDetailScreenState extends DetailScreenState<int, Weather> {
         const Divider(
           thickness: 2,
         ),
-        Image(
-          image: Theme.of(context).isDarkMode
-              ? const AssetImage(
-                  "assets/proprietary/openweather/dark/openweather.png")
-              : const AssetImage(
-                  "assets/proprietary/openweather/openweather.png"),
+        const Image(
+          image: AssetImage("assets/proprietary/openweather/openweather.png"),
+          color: Colors.black87,
+          colorBlendMode: BlendMode.screen,
           height: 200,
+        ),
+        ListTile(
+          title: Text(AppLocalizations.of(context)!.moreAboutOpenWeather),
+          trailing: const Icon(Icons.open_in_new),
+          onTap: () => launchUrl(UrlManager.shared.openWeatherUrl),
         )
       ],
     );
