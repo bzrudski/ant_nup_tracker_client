@@ -33,42 +33,42 @@ dependencies:
   json_annotation: ^4.0.1
   http: ^0.13.3
   built_value: ^8.0.6
-  intl: ^0.17.0
-  latlong2: ^0.8.0
+  intl: ^0.18.1
+  latlong2: ^0.9.0
   recase: ^4.0.0
-  image_picker: ^0.8.2
+  image_picker: ^1.0.4
   tuple: ^2.0.0
 #  flutter_map: ^0.13.1
   url_launcher: ^6.0.9
   google_maps_flutter: ^2.0.6
-  google_maps_flutter_web: ^0.3.0+2
-  location: ^4.3.0
+  google_maps_flutter_web: ^0.5.4+2
+  location: ^5.0.3
   path: ^1.8.0
   mime: ^1.0.0
-  lints: ^1.0.1
-  flutter_lints: ^1.0.4
+  lints: ^2.1.1
+  flutter_lints: ^2.0.3
   cached_network_image: ^3.1.0
-  scrollable_positioned_list: ^0.2.3
-  firebase_core: ^1.10.0
-  firebase_messaging: ^11.1.0
+  scrollable_positioned_list: ^0.3.8
+  firebase_core: ^2.16.0
+  firebase_messaging: ^14.6.8
   shared_preferences: ^2.0.6
-  flutter_secure_storage: ^4.2.1
+  flutter_secure_storage: ^9.0.0
   sqflite: ^2.0.0+4
-  flutter_image_compress: ^1.1.0
-  timezone: ^0.8.0
+  flutter_image_compress: ^2.0.4
+  timezone: ^0.9.2
   lat_lng_to_timezone: ^0.2.0
   path_provider: ^2.0.8
-  permission_handler: ^9.2.0
+  permission_handler: ^11.0.0
   flutter_oss_licenses: ^2.0.0+1
   gallery_saver: ^2.3.2
-  google_fonts: ^3.0.0
+  google_fonts: ^4.0.4
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  json_serializable: ^4.1.1
+  json_serializable: ^6.7.1
   build_runner: ^2.0.3
 
 # For information on the generic Dart part of this file, see the
@@ -87,6 +87,7 @@ flutter:
 #   To add assets to your application, add an assets section, like this:
   assets:
      - assets/cartoon_ant/
+     - assets/cartoon_ant/dark/
      - assets/ant_circles/
      - assets/proprietary/openweather/
      - fonts/Dosis/OFL.txt
