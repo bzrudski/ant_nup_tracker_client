@@ -180,7 +180,7 @@ class _UserDetailScreenState extends DetailScreenState<String, User> {
             label: _appLocalizations.usernameLabel, detail: user.username),
         _buildUserRoleRow(
             label: _appLocalizations.userRoleLabel, userRole: user.role),
-        if (user.institution.isNotEmpty)
+        if (user.role == Role.professional)
           _buildTextLabelDetailRow(
               label: _appLocalizations.institutionLabel,
               detail: user.institution),

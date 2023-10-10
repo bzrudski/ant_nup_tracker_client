@@ -36,7 +36,7 @@ import 'package:intl/intl.dart';
 import 'package:lat_lng_to_timezone/lat_lng_to_timezone.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:permission_handler/permission_handler.dart' as ph;
-import 'package:gallery_saver/gallery_saver.dart';
+import 'package:gal/gal.dart';
 // import 'package:json_annotation/json_annotation.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -154,7 +154,8 @@ class _FlightImagesRowWidgetState extends State<FlightImagesRowWidget> {
         if (pickedImage == null) return null;
 
         // pickedImage.saveTo(pickedImage.path);
-        await GallerySaver.saveImage(pickedImage.path);
+        final Uint8List imageBytes = await pickedImage.readAsBytes();
+        await Gal.putImageBytes(imageBytes);
         // print("Saved picture... $didSave");
 
         break;
