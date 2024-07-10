@@ -113,7 +113,7 @@ class _ChangelogScreenState extends DetailScreenState<int, List<Changelog>> {
   @override
   Widget build(BuildContext context) {
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
 
     return super.build(context);
   }

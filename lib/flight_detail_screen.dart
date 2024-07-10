@@ -720,7 +720,7 @@ class _FlightDetailScreenState extends DetailScreenState<int, Flight> {
   Widget build(BuildContext context) {
     _appLocalizations = AppLocalizations.of(context)!;
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
     // _headerStyle =
     //     Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
 
@@ -838,7 +838,7 @@ class CommentRow extends StatelessWidget {
     final currentLocale = _appLocalizations.localeName;
     final textStyle = Theme.of(context)
         .textTheme
-        .bodyText2!
+        .bodyMedium!
         .apply(fontSizeDelta: 4.0)
         .apply(fontWeightDelta: 2);
 
@@ -970,7 +970,7 @@ class _CommentSectionState extends State<CommentSection> {
     final appLocalizations = AppLocalizations.of(context)!;
 
     final _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
 
     return FutureBuilder(
       future: _fetchCommentsFuture,

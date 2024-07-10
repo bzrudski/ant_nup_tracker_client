@@ -148,7 +148,7 @@ class SimpleWelcomeScreen extends StatelessWidget implements PageScreen {
       children: [
         Text(
           appLocalizations.welcomeHeader,
-          style: Theme.of(context).textTheme.headline5,
+          style: Theme.of(context).textTheme.headlineSmall,
           textAlign: TextAlign.center,
         ),
         Image(
@@ -164,14 +164,14 @@ class SimpleWelcomeScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Image(
                   image: const AssetImage("assets/ant_circles/white_ant.png"),
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   colorBlendMode: BlendMode.srcATop,
                 ),
               ),
               Expanded(
                 child: Text(
                   appLocalizations.welcomeBullet1,
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
             ],
@@ -185,14 +185,14 @@ class SimpleWelcomeScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Image(
                   image: const AssetImage("assets/ant_circles/white_ant.png"),
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   colorBlendMode: BlendMode.srcATop,
                 ),
               ),
               Expanded(
                   child: Text(
                 appLocalizations.welcomeBullet2,
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               )),
             ],
           ),
@@ -205,14 +205,14 @@ class SimpleWelcomeScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Image(
                   image: const AssetImage("assets/ant_circles/white_ant.png"),
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   colorBlendMode: BlendMode.srcATop,
                 ),
               ),
               Expanded(
                   child: Text(
                 appLocalizations.welcomeBullet3,
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               )),
             ],
           ),
@@ -241,14 +241,14 @@ class PermissionsScreen extends StatelessWidget implements PageScreen {
     const textStyle = TextStyle(fontSize: 14);
 
         // Theme.of(context).textTheme.bodyText2!.copyWith(fontSize: 14);
-    var headingStyle = Theme.of(context).textTheme.headline6;
+    var headingStyle = Theme.of(context).textTheme.titleLarge;
         // textStyle.copyWith(fontWeight: FontWeight.bold, fontSize: 18);
     return ListView(
       padding: const EdgeInsets.all(16.0),
       children: [
         Text(
           appLocalizations.appPermissionsHeader,
-          style: Theme.of(context).textTheme.headline5,
+          style: Theme.of(context).textTheme.headlineSmall,
           textAlign: TextAlign.center,
         ),
         Text(
@@ -263,7 +263,7 @@ class PermissionsScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(
                   Icons.location_pin,
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   size: 32.0,
                 ),
               ),
@@ -295,7 +295,7 @@ class PermissionsScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(
                   Icons.camera_alt,
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   size: 32.0,
                 ),
               ),
@@ -330,7 +330,7 @@ class PermissionsScreen extends StatelessWidget implements PageScreen {
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(
                   Icons.photo,
-                  color: Theme.of(context).textTheme.headline6!.color,
+                  color: Theme.of(context).textTheme.titleLarge!.color,
                   size: 32.0,
                 ),
               ),
@@ -539,7 +539,7 @@ class MoreDetailsWelcome extends StatelessWidget implements PageScreen {
           padding: const EdgeInsets.all(4.0),
           child: Text(
             appLocalizations.welcomeBodyText,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headlineSmall,
             textAlign: TextAlign.center,
           ),
         ),
@@ -550,7 +550,7 @@ class MoreDetailsWelcome extends StatelessWidget implements PageScreen {
           padding: const EdgeInsets.all(4.0),
           child: Text(
             appLocalizations.welcomeBottomText,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headlineSmall,
             textAlign: TextAlign.center,
           ),
         ),

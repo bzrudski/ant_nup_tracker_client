@@ -67,52 +67,52 @@ class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
         colorScheme: ColorScheme.fromSwatch(backgroundColor: const Color(0xffbfedff)),
         fontFamily: 'Open_Sans',
         textTheme: const TextTheme(
-          subtitle2:
+          titleSmall:
               TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          subtitle1:
+          titleMedium:
               TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          headline1:
+          displayLarge:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline2:
+          displayMedium:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline3:
+          displaySmall:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline4:
+          headlineMedium:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline5:
+          headlineSmall:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline6:
+          titleLarge:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          overline: TextStyle(fontFamily: 'Open_Sans'),
-          bodyText1: TextStyle(fontFamily: 'Open_Sans'),
-          bodyText2: TextStyle(fontFamily: 'Open_Sans'),
-          caption: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          button: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelSmall: TextStyle(fontFamily: 'Open_Sans'),
+          bodyLarge: TextStyle(fontFamily: 'Open_Sans'),
+          bodyMedium: TextStyle(fontFamily: 'Open_Sans'),
+          bodySmall: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelLarge: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
         textTheme: const TextTheme(
-          subtitle2:
+          titleSmall:
               TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          subtitle1:
+          titleMedium:
               TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          headline1:
+          displayLarge:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline2:
+          displayMedium:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline3:
+          displaySmall:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline4:
+          headlineMedium:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline5:
+          headlineSmall:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          headline6:
+          titleLarge:
               TextStyle(fontFamily: 'Dosis', fontWeight: FontWeight.w700),
-          overline: TextStyle(fontFamily: 'Open_Sans'),
-          bodyText1: TextStyle(fontFamily: 'Open_Sans'),
-          bodyText2: TextStyle(fontFamily: 'Open_Sans'),
-          caption: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          button: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelSmall: TextStyle(fontFamily: 'Open_Sans'),
+          bodyLarge: TextStyle(fontFamily: 'Open_Sans'),
+          bodyMedium: TextStyle(fontFamily: 'Open_Sans'),
+          bodySmall: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelLarge: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
         ),
       ),
       title: "AntNupTracker",
@@ -506,7 +506,7 @@ class _NewFlightListScreenState extends State<NewFlightListScreen> {
     // print("There are ${_flights.length} flights.");
 
     final labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
 
     return Scaffold(
       appBar: AppBar(
@@ -797,7 +797,7 @@ class FlightRow extends StatelessWidget {
               child: Column(
                 children: [
                   Text("${flight.taxonomy} (#${flight.flightID})",
-                      style: Theme.of(context).textTheme.headline6),
+                      style: Theme.of(context).textTheme.titleLarge),
                   Text(
                     stringFromCoordinates(
                         latitude: flight.latitude, longitude: flight.longitude),

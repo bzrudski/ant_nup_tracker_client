@@ -1111,7 +1111,7 @@ class _DateFilteringRowState extends _FilteringRowState<DateFilter> {
   @override
   Widget buildBody(BuildContext context) {
     // var labelTheme = Theme.of(context).textTheme.bodyText1!;
-    final labelTheme = Theme.of(context).textTheme.subtitle1!;
+    final labelTheme = Theme.of(context).textTheme.titleMedium!;
     // var activeColor = labelTheme.color;
     final deactivatedColor = Theme.of(context).disabledColor;
     final deactivatedLabelTheme = labelTheme.apply(color: deactivatedColor);
@@ -1258,7 +1258,7 @@ class _TaxonomyFilteringRowState extends _FilteringRowState<TaxonomyFilter> {
   @override
   Widget buildBody(BuildContext context) {
     // var labelTheme = Theme.of(context).textTheme.bodyText1!;
-    var labelTheme = Theme.of(context).textTheme.subtitle1;
+    var labelTheme = Theme.of(context).textTheme.titleMedium;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1946,7 +1946,7 @@ class _VerificationFilteringRowState
 
   @override
   Widget buildBody(BuildContext context) {
-    final labelTheme = Theme.of(context).textTheme.subtitle1!;
+    final labelTheme = Theme.of(context).textTheme.titleMedium!;
     final deactivatedColor = Theme.of(context).disabledColor;
     final deactivatedLabelTheme = labelTheme.apply(color: deactivatedColor);
 

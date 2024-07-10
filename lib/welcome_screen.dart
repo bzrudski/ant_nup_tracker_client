@@ -40,7 +40,7 @@ class WelcomeScreen extends StatelessWidget {
           children: [
             Text(
               appLocalizations.welcomeHeader,
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
               textAlign: TextAlign.center,
             ),
             Image(
@@ -61,14 +61,14 @@ class WelcomeScreen extends StatelessWidget {
                     child: Image(
                       image:
                           const AssetImage("assets/ant_circles/white_ant.png"),
-                      color: Theme.of(context).textTheme.headline6!.color,
+                      color: Theme.of(context).textTheme.titleLarge!.color,
                       colorBlendMode: BlendMode.srcATop,
                     ),
                   ),
                   Expanded(
                     child: Text(
                       appLocalizations.welcomeBullet1,
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                   ),
                 ],
@@ -83,14 +83,14 @@ class WelcomeScreen extends StatelessWidget {
                     child: Image(
                       image:
                           const AssetImage("assets/ant_circles/white_ant.png"),
-                      color: Theme.of(context).textTheme.headline6!.color,
+                      color: Theme.of(context).textTheme.titleLarge!.color,
                       colorBlendMode: BlendMode.srcATop,
                     ),
                   ),
                   Expanded(
                       child: Text(
                     appLocalizations.welcomeBullet2,
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   )),
                 ],
               ),
@@ -104,14 +104,14 @@ class WelcomeScreen extends StatelessWidget {
                     child: Image(
                       image:
                           const AssetImage("assets/ant_circles/white_ant.png"),
-                      color: Theme.of(context).textTheme.headline6!.color,
+                      color: Theme.of(context).textTheme.titleLarge!.color,
                       colorBlendMode: BlendMode.srcATop,
                     ),
                   ),
                   Expanded(
                       child: Text(
                     appLocalizations.welcomeBullet3,
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   )),
                 ],
               ),
@@ -120,7 +120,7 @@ class WelcomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(4.0),
               child: Text(
                 appLocalizations.welcomeBodyText,
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
                 textAlign: TextAlign.center,
               ),
             ),
@@ -131,7 +131,7 @@ class WelcomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(4.0),
               child: Text(
                 appLocalizations.welcomeBottomText,
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
                 textAlign: TextAlign.center,
               ),
             ),

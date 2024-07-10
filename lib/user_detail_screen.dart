@@ -169,7 +169,7 @@ class _UserDetailScreenState extends DetailScreenState<String, User> {
     // final currentLocale = _appLocalizations.localeName;
 
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
     // _headerStyle =
     //     Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
 
@@ -208,7 +208,7 @@ class _UserDetailScreenState extends DetailScreenState<String, User> {
     _appLocalizations = AppLocalizations.of(context)!;
     // final currentLocale = AppLocalizations.of(context)!.localeName;
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
     // _headerStyle =
     //     Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
 

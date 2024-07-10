@@ -134,7 +134,7 @@ class _PackageRowState extends State<PackageRow> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final textStyle =
-        Theme.of(context).textTheme.bodyText2!.copyWith(fontSize: 14);
+        Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 14);
     var headingStyle =
         textStyle.copyWith(fontWeight: FontWeight.bold, fontSize: 18);
 

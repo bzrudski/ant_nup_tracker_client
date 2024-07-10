@@ -28,7 +28,7 @@ class HeaderRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = headerStyle ?? Theme.of(context).textTheme.headline6;
+    final textStyle = headerStyle ?? Theme.of(context).textTheme.titleLarge;
 
     return Column(
       children: [

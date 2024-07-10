@@ -612,7 +612,7 @@ class _LoginFormState extends State<LoginForm> {
       children: [
         Text(
           appLocalization.loginScreenHeader,
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
         Image(
@@ -880,14 +880,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     final appLocalization = AppLocalizations.of(context)!;
     // final currentLocale = appLocalization.localeName;
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
     _headerStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontWeightDelta: 2);
 
     final buttonStyle = ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(16),
       textStyle: _headerStyle,
-      primary: Colors.red,
+      backgroundColor: Colors.red,
     );
 
     return RefreshIndicator(
@@ -1022,7 +1022,7 @@ class _TaxonomyNotificationRowState extends State<TaxonomyNotificationRow> {
   @override
   Widget build(BuildContext context) {
     _appLocalizations = AppLocalizations.of(context)!;
-    var labelTheme = Theme.of(context).textTheme.subtitle1;
+    var labelTheme = Theme.of(context).textTheme.titleMedium;
 
     return FutureBuilder(
       future: future,

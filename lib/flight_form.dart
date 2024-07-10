@@ -479,7 +479,7 @@ class _FlightFormScreenState extends State<FlightFormScreen> {
                               ),
                               child: Text(
                                 options.elementAt(index).name,
-                                style: Theme.of(context).textTheme.bodyText2!,
+                                style: Theme.of(context).textTheme.bodyMedium!,
                               ),
                             ),
                           ),
@@ -608,7 +608,7 @@ class _FlightFormScreenState extends State<FlightFormScreen> {
                               ),
                               child: Text(
                                 options.elementAt(index).name,
-                                style: Theme.of(context).textTheme.bodyText2!,
+                                style: Theme.of(context).textTheme.bodyMedium!,
                               ),
                             ),
                           ),
@@ -1315,7 +1315,7 @@ class _FlightFormScreenState extends State<FlightFormScreen> {
   @override
   Widget build(BuildContext context) {
     _labelStyle =
-        Theme.of(context).textTheme.bodyText2!.apply(fontSizeDelta: 4.0);
+        Theme.of(context).textTheme.bodyMedium!.apply(fontSizeDelta: 4.0);
     // _headerStyle =
     //     Theme.of(context).textTheme.bodyText2!.apply(fontWeightDelta: 2);
     _appLocalizations = AppLocalizations.of(context)!;
