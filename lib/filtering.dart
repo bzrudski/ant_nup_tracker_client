@@ -1042,6 +1042,7 @@ abstract class _FilteringRowState<T extends ListFilter>
                 Text(filterLabel),
                 const Spacer(),
                 Switch(
+                    inactiveTrackColor: const Color(0xFFAAAAAA),
                     value: isFiltering,
                     onChanged: (value) {
                       setState(() => isFiltering = value);

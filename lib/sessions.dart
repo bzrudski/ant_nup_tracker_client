@@ -843,7 +843,9 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
   Future<void> logout() async {
     await SessionManager.shared.logout();
-    Navigator.of(context).pop(true);
+    if (context.mounted) {
+      Navigator.of(context).pop(true);
+    }
   }
 
   Future<void> editUserInfo() async {
@@ -887,7 +889,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     final buttonStyle = ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(16),
       textStyle: _headerStyle,
-      backgroundColor: Colors.red,
+      foregroundColor: Colors.white,
+      backgroundColor: const Color(0xFFFF6666),
     );
 
     return RefreshIndicator(

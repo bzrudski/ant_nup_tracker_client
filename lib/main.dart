@@ -39,6 +39,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'location_picker.dart';
 import 'dark_mode_theme_ext.dart';
 import 'taxonomy_manager.dart';
+import 'firebase_options.dart';
 
 void main() => runApp(const AntNupTrackerApp());
 
@@ -50,7 +51,9 @@ class AntNupTrackerApp extends StatefulWidget {
 }
 
 class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
-  final Future<FirebaseApp> _firebaseInitialization = Firebase.initializeApp();
+  final Future<FirebaseApp> _firebaseInitialization = Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
 
   // Future<void> _onReceivedBackgroundNotification(RemoteMessage message) async {
   //   final id = message.data["flight_id"] as int?;
@@ -62,9 +65,21 @@ class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
 
   @override
   Widget build(BuildContext context) {
+    print("Building material app...");
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(backgroundColor: const Color(0xffbfedff)),
+        colorScheme:
+            ColorScheme.fromSwatch(backgroundColor: const Color(0xFF000041)),
+        primaryColor: const Color(0xFF45afff),
+        appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF45afff)),
+        buttonTheme: const ButtonThemeData(buttonColor: Color(0xFFAAAAFF)),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor:
+                WidgetStateProperty.resolveWith((_) => const Color(0xFFCCEEFF)),
+            foregroundColor: WidgetStateProperty.resolveWith((_) => const Color(0xFF000088)),
+          ),
+        ),
         fontFamily: 'Open_Sans',
         textTheme: const TextTheme(
           titleSmall:
@@ -86,11 +101,17 @@ class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
           labelSmall: TextStyle(fontFamily: 'Open_Sans'),
           bodyLarge: TextStyle(fontFamily: 'Open_Sans'),
           bodyMedium: TextStyle(fontFamily: 'Open_Sans'),
-          bodySmall: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          labelLarge: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          bodySmall:
+              TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelLarge:
+              TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
+        colorScheme: const ColorScheme.dark(primary: Color(0xFF45afff)),
+        primaryColor: const Color(0xFF000041),
+        appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF000041)),
+        buttonTheme: const ButtonThemeData(buttonColor: Color(0xFFAAAAFF)),
         textTheme: const TextTheme(
           titleSmall:
               TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
@@ -111,8 +132,10 @@ class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
           labelSmall: TextStyle(fontFamily: 'Open_Sans'),
           bodyLarge: TextStyle(fontFamily: 'Open_Sans'),
           bodyMedium: TextStyle(fontFamily: 'Open_Sans'),
-          bodySmall: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
-          labelLarge: TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          bodySmall:
+              TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
+          labelLarge:
+              TextStyle(fontFamily: 'Open_Sans', fontWeight: FontWeight.w500),
         ),
       ),
       title: "AntNupTracker",
@@ -132,6 +155,8 @@ class _AntNupTrackerAppState extends State<AntNupTrackerApp> {
               ),
             );
           }
+
+          // print(snapshot);
 
           if (snapshot.connectionState == ConnectionState.done) {
             final messaging = FirebaseMessaging.instance;
@@ -214,6 +239,7 @@ class _NewFlightListScreenState extends State<NewFlightListScreen> {
   late AppLocalizations _appLocalizations;
 
   final _animatedStateKey = GlobalKey<AnimatedListState>();
+
   // var _animatedStateKey = GlobalKey<AnimatedListState>();
 
   // final _flightStore = FlightStore();
@@ -417,32 +443,30 @@ class _NewFlightListScreenState extends State<NewFlightListScreen> {
     super.initState();
     initializeTimeZones();
     _loadingProgress = InitialLoadingProgress();
-    _fetchFlightsFuture =
-        resetWelcomeScreen(shouldReset: false)
+    _fetchFlightsFuture = resetWelcomeScreen(shouldReset: false)
         .then((_) => LicenseRegistry.addLicense(() async* {
               final ofl = await rootBundle.loadString("fonts/Dosis/OFL.txt");
               yield LicenseEntryWithLineBreaks(['Dosis'], ofl);
 
-              final apache = await rootBundle.loadString("fonts/Open_Sans/LICENSE.txt");
+              final apache =
+                  await rootBundle.loadString("fonts/Open_Sans/LICENSE.txt");
               yield LicenseEntryWithLineBreaks(['Open Sans'], apache);
             }))
         .then((_) async {
-          // print("At stage: Loading taxonomy");
-          await loadTaxonomyData();
-        })
-        .then((_) async {
-          // print("At stage: Showing Welcome Screen");
-          await showWelcomeScreen(context);
-        })
-        .then((_) async {
-          // print("At stage: Loading credentials and filtering");
-          await loadCredentialsAndFiltering();
-        })
+      // print("At stage: Loading taxonomy");
+      await loadTaxonomyData();
+    }).then((_) async {
+      // print("At stage: Showing Welcome Screen");
+      await showWelcomeScreen(context);
+    }).then((_) async {
+      // print("At stage: Loading credentials and filtering");
+      await loadCredentialsAndFiltering();
+    })
         // loadTaxonomyAndCredentialsAndFiltering()
         .then((_) async {
-          // print("At stage: reading flight list");
-          return await _generateFlightReadFuture(false);
-        });
+      // print("At stage: reading flight list");
+      return await _generateFlightReadFuture(false);
+    });
     // SessionManager.shared.loadAndVerifyCredentials().then((value) {
     //   print("Credentials loaded $value");
     //   if (value) setState(() {});
@@ -464,18 +488,16 @@ class _NewFlightListScreenState extends State<NewFlightListScreen> {
 
   Future<void> showLoginScreen(BuildContext context) async {
     if (!kIsWeb &&
-        MediaQuery.of(context).orientation ==
-            Orientation.landscape &&
+        MediaQuery.of(context).orientation == Orientation.landscape &&
         MediaQuery.of(context).size.height < 500) {
-      final didLogIn =
-      await Navigator.of(context).push(MaterialPageRoute<bool>(
+      final didLogIn = await Navigator.of(context).push(MaterialPageRoute<bool>(
           builder: (context) => Scaffold(
-            appBar: AppBar(),
-            body: Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(8.0),
-                child: const LoginForm()),
-          ),
+                appBar: AppBar(),
+                body: Container(
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.all(8.0),
+                    child: const LoginForm()),
+              ),
           fullscreenDialog: true));
       if (didLogIn ?? false) {
         setState(() {});
@@ -484,15 +506,14 @@ class _NewFlightListScreenState extends State<NewFlightListScreen> {
       final didLogIn = await showDialog<bool>(
           context: context,
           builder: (BuildContext context) => const Dialog(
-            // title: Text(
-            //     AppLocalizations.of(context)!.loginAppBarHeader),
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: LoginForm(),
-            ),
-          ),
-        barrierDismissible: false
-      );
+                // title: Text(
+                //     AppLocalizations.of(context)!.loginAppBarHeader),
+                child: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: LoginForm(),
+                ),
+              ),
+          barrierDismissible: false);
 
       if (didLogIn ?? false) {
         setState(() {});
@@ -795,6 +816,7 @@ class FlightRow extends StatelessWidget {
                 child: _getFlightIcon()),
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("${flight.taxonomy} (#${flight.flightID})",
                       style: Theme.of(context).textTheme.titleLarge),
@@ -841,7 +863,6 @@ class FlightRow extends StatelessWidget {
                     ],
                   ),
                 ],
-                crossAxisAlignment: CrossAxisAlignment.start,
               ),
             ),
           ],
