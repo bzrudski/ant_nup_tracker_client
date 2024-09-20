@@ -131,11 +131,17 @@ class FlightStore {
     if (!flightIsLoaded(id)) return true;
 
     final timeLastRead = _flights[id]!.item2;
-    final timeLastUpdated = _flightEntries
-        .firstWhere((element) => element.flightID == id)
-        .lastUpdated;
 
-    return timeLastRead.isBefore(timeLastUpdated);
+    try {
+      final timeLastUpdated = _flightEntries
+          .firstWhere((element) => element.flightID == id)
+          .lastUpdated;
+
+      return timeLastRead.isBefore(timeLastUpdated);
+    }
+    on StateError {
+      return true;
+    }
   }
 
   Future<void> _readFlight({required int id, required bool updatingFlight}) async {
@@ -155,6 +161,7 @@ class FlightStore {
 
   Future<Flight> getFlight(int id, {bool forceReload = false}) async {
     var isFlightLoaded = flightIsLoaded(id);
+    // print("Flight $id is loaded: $isFlightLoaded");
     if (forceReload || !isFlightLoaded || flightIsOutdated(id)) {
       await _readFlight(id: id, updatingFlight: isFlightLoaded);
     }
