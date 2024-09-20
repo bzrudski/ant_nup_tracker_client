@@ -22,6 +22,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:ant_nup_tracker/exceptions.dart';
+import 'package:ant_nup_tracker/launch_url.dart';
 import 'package:ant_nup_tracker/url_manager.dart';
 import 'package:ant_nup_tracker/user.dart';
 import 'package:ant_nup_tracker/users.dart';
@@ -113,6 +114,17 @@ class _EditUserProfileScreenState extends State<EditUserProfileScreen> {
   @override
   Widget build(BuildContext context) {
     _appLocalizations = AppLocalizations.of(context)!;
+
+    final headerStyle =
+        Theme.of(context).textTheme.bodyMedium!.apply(fontWeightDelta: 2);
+
+    final buttonStyle = ElevatedButton.styleFrom(
+      padding: const EdgeInsets.all(16),
+      textStyle: headerStyle,
+      foregroundColor: Colors.white,
+      backgroundColor: const Color(0xFFFF6666),
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: Text(_appLocalizations.editUserProfile),
@@ -189,7 +201,17 @@ class _EditUserProfileScreenState extends State<EditUserProfileScreen> {
                         helperText: _appLocalizations.optionalField),
                     textCapitalization: TextCapitalization.sentences,
                   ),
-                )
+                ),
+                const SizedBox(height: 100,),
+                ElevatedButton.icon(
+                  onPressed: () async {
+                    final urlString = UrlManager.shared.deleteAccountUrl.toString();
+                    await launchUrl(urlString);
+                  },
+                  label: Text(_appLocalizations.deleteAccount),
+                  icon: const Icon(Icons.delete),
+                  style: buttonStyle,
+                ),
               ],
             ),
           ),

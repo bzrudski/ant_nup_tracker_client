@@ -48,6 +48,7 @@ class UrlManager {
   final _flightsUrl = "flights";
   final _createUrl = "create";
   final _createAccountUrl = "create-account";
+  final _deleteAccountUrl = "delete-account";
   final _commentsUrl = "comments";
   final _mySpeciesUrl = "my-species";
   final _myGeneraUrl = "my-genera";
@@ -99,6 +100,7 @@ class UrlManager {
   Uri get taxonomyUrl => apiUrl.resolve("$_taxonomyUrl/");
   Uri get generaUrl => apiUrl.resolve("$_generaUrl/");
   Uri get createAccountUrl => _baseUrl.resolve("$_createAccountUrl/");
+  Uri get deleteAccountUrl => _baseUrl.resolve("$_deleteAccountUrl/");
   Uri get usersUrl => apiUrl.resolve("$_usersUrl/");
   Uri get passwordResetUrl => _baseUrl.resolve("$_resetPassUrl/");
   Uri get aboutUrl => _baseUrl.resolve("$_aboutUrl/");

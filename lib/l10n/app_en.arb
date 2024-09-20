@@ -1289,5 +1289,9 @@
   "updatingProfileDetails": "Updating Profile Details",
   "@updatingProfileDetails": {
     "description": "Header for alert indicating that user profile is being updated."
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Text for button to delete the current account."
   }
 }
