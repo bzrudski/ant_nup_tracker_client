@@ -6,6 +6,8 @@ Client app for AntNupTracker for iOS and Android™, developed using the Flutter
 
 Copyright (C) 2020-2022 Abouheif Lab
 
+> ⚠️ **Attention**: This repository is not being actively maintained and has been archived. It may be re-opened in the future. The deployment at <https://www.antnuptialflights.com> is offline until further notice. Thank you to everyone who has used our app over the past several years.
+
 Welcome to the repository for the `AntNupTracker` app. A contribution guide is coming shortly. The code is designed to try to follow Dart and Flutter style.
 
 This app is a tool for browsing records of [ant nuptial flights](https://www.antnuptialflights.com/about/) and reporting new flights from the field. Visit our website at https://www.antnuptialflights.com for more details. For the server-side application that manages the database of ant nuptial flights, please go to [this repository](https://github.com/bzrudski/antnuptracker-server/).
